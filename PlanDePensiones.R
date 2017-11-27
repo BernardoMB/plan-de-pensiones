@@ -1,5 +1,5 @@
 # Especificar el directorio de trabajo.
-setwd("/Users/bmond/Desktop/Plan de Pensiones")
+setwd("C:/Users/hca/Desktop/plan-de-pensiones")
 
 # Base de datos de empleados.
 baseEmpleados = read.csv("./BaseEmpleados.csv", header = TRUE)
@@ -84,6 +84,16 @@ getBeneficio <- function(sueldoBaseMensual, servicio) {
   beneficio <- sueldoBaseMensual*(3)+(sueldoDiario*20)*servicio
 }
 
+#' Calcular el aguinaldo.
+#'
+#' @param sueldoBaseMensual Sueldo base mensual sobre el cual se calcula el aguinaldo.
+#' @return El aguinaldo según el \code{sueldoBaseMensual}
+#' @examples
+#' getAguinaldo(25000)
+#' getAguinaldo
+getAguinaldo <- function() {
+  
+}
 
 # tPx (T)
 probabilidadDeSupervivencia <- function(t, x) {
